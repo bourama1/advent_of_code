@@ -1,4 +1,3 @@
-# Script: count_zero_crossings.py
 # Starting position: 50
 # Dial: 0–99 circular
 # Input lines: L45, R32, ...
