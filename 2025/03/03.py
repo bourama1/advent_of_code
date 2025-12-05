@@ -14,7 +14,7 @@ def main():
             idx = s.find(max_ch, start, end)
             res.append(max_ch)
             start = idx + 1
-        return ''.join(res)
+        return "".join(res)
 
     with open("input.txt", "r", encoding="utf-8") as f:
         total = 0

@@ -1,9 +1,11 @@
 import re
 
-pattern = re.compile(r'^(\d+)\1+$')
+pattern = re.compile(r"^(\d+)\1+$")
+
 
 def is_repeating(num):
     return bool(pattern.match(str(num)))
+
 
 def main():
     with open("input.txt", "r", encoding="utf-8") as f:
@@ -17,6 +19,7 @@ def main():
                         wrongs_ids.append(num)
             print(f"Input: {line.strip()}\nRepeating IDs: {wrongs_ids}")
             print(f"Sum of Repeating IDs: {sum(wrongs_ids)}")
+
 
 if __name__ == "__main__":
     main()
